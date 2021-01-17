@@ -1,56 +1,145 @@
 ## Lucifer
 
 
-<p><a href="file:///::{208D2C60-3AEA-1069-A2D7-08002B30309D}" target="_blank">网上邻居</a></p>
-<p><a href="file:///::{20D04FE0-3AEA-1069-A2D8-08002B30309D}/d:/web" target="_blank">我的电脑</a></p>
-<p><a href="file:///::{450D8FBA-AD25-11D0-98A8-0800361B1103}" target="_blank">我的文档</a></p>
-<p><a href="file:///::{645FF040-5081-101B-9F08-00AA002F954E}" target="_blank">回收站</a></p>
-<p><a href="file:///::{20D04FE0-3AEA-1069-A2D8-08002B30309D}/::{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-target="_blank">控制面板</a></p>
-<p><a href="file:///::{7007ACC7-3202-11D1-AAD2-00805FC1270E}">拨号网络</a>(windows 2000)</p>
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
-    <title>kangjunhao</title>
+    <title>test</title>
     <meta charset="utf8">
     <style>
-        #div1{                       <!--为了是标签作用明显，用css填充内容 -->
-            height: 800px;
-            background: darkred;
+        *{
+            margin: 0;
         }
-        #div2{
-            height: 800px;
-            background: yellow;
+        .head{
+            width: 100%;
+            height: 44px;
+            background-color: #2459a2;
         }
-        #div3 {
-            height: 800px;
-            background: black;
+        .head_main{
+            width: 1022px;
+            height: 100%;
+            /*background: #000;*/
+            margin: 0 auto;
+        }
+        .head_left a{
+            /*line-height: 0px;*/
+            width: 60px;
+            height: 30px;
+            font-size: 13px;
+            float: left;
+            margin-top: 10px;
+        }
+        .head_right .register,.login{
+            float: right;
+            width: 60px;
+            height:44px;
+            /*background-color: red;*/
+            margin-top: 10px;
+        }
+        .search{
+            float: right;
+            margin-top: 10px;
+        }
+        .middle{
+
+            width: 100%;
+            height: 650px;
+            background-color: #ededed;
+        }
+        .middle_main{
+            width: 1100px;
+            height: 100%;
+            background-color: white;
+            margin: 0 auto;
+        }
+        .middle_left{
+            margin-left: 10px;
+            width: 800px;
+            height: 100%;
+            background-color: white;
+            display: inline-block;
+        }
+        .middle_right{
+            width: 270px;
+            height: 100%;
+            background-color:  #ededed;
+            display: inline-block;
+            background-image: url("5.jpg");
+        }
+        .top_left{
+
+            width: 772px;
+            height:66px;
+            /*margin-top: 10px;*/
+            background-color: #9c9c9c;
+            /*display: inline-block;*/
+            margin: 0 auto;
+        }
+        /*.top_left *{*/
+            /*width: 50px;*/
+            /*height:30px;*/
+            /*margin-top: 10px;*/
+            /*background-color: #9c9c9c;*/
+            /*display: inline-block;*/
+        /*}*/
+        .bottom{
+            text-align: center;
+            margin-top: 10px;
         }
 
     </style>
 </head>
 
 <body>
-<!--<img src="15063K610-2.jpg" width="800px" height="500px" alt="加载失败" title="动漫图片">  <!– 插入图片–>-->
 
-<div id="div_top">top</div>        <!--top页 -->
-<a href="#div1">第一章</a>       <!--跳转到指定id的div标签 -->
-<a href="#div2">第二章</a>
-<a href="#div3">第三章</a>
+<div class="head">        <!-- 顶部 -->
+    <div class="head_main">
+        <div class="head_left">
+            <a class="home page">首页</a>
+            <a class="all">全部</a>
+            <a class="42part">42区</a>
+            <a class="joke">段子</a>
+            <a class="pic">图片</a>
+            <a class="it1024">挨踢1024</a>
+            <a class="answer">你问我答</a>
+        </div>
+        <div class="head_right">
+            <a class="search">
+                搜索<input type="text">
+            </a>
+            <a class="register">注册</a>
+            <a class="login">登录</a>
 
+        </div>
+    </div>
+</div>
 
-<div id="div1">第一章内容</div>      <!--拥有内容的div标签 -->
-<a href="#div_top">back off</a>   <!-- 实现直接返回top页-->
-<div id="div2">第二章内容</div>
-<a href="#div_top">back off</a>
-<div id="div3">第三章内容</div>
-<a href="#div_top">back off</a>
+<div class="middle">    <!-- 中间 -->
+    <div class="middle_main">
+        <div class="middle_left">
+            <div class="top_left">
+                <!--<a class="best_hot">最热</a>-->
+                <!--<a class="best_new">最新</a>-->
+                <!--<a class="people">人类发布</a>-->
+            </div>
+            <!--<div class="top_right">-->
+                <!--<a class=""></a>-->
+                <!--<a class=""></a>-->
+                <!--<a class=""></a>-->
+            <!--</div>-->
+        </div>
+        <div class="middle_right"></div>
+    </div>
+</div>
 
-
+<div class="bottom">      <!-- 底部 -->
+    <div>关于我们|联系我们|服务条款|隐私政策|抽屉新热榜工具|下载客户端|意见与反馈|友情链接|公告  </div>
+    <div> 旗下站点 ©2018 chouti.com 京ICP备09053974号-3 京公网安备 110102004562</div>
+    <div>违法和不良信息举报： 电话：010-58302039 邮箱：jubao@chouti.com</div>
+    <div>版权所有：北京格致璞科技有限公司</div>
+</div>
 
 </body>
-
 </html>
