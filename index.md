@@ -1,44 +1,24 @@
 ## Lucifer
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <select onchange="change_back()" id="change">
-        <option value="a">春天</option>
-        <option value="b">夏天</option>
-        <option value="c">秋天</option>
-        <option value="d">冬天</option>
-
-    </select>
-
-
-    <script>
-        document.body.style.background = 'url(001.jpg)';
-        function change_back() {
-            hand = document.getElementById('change');
-//            console.log(hand.value);
-//            console.log(typeof hand.value);  // string
-            switch (hand.value){
-                case 'a':
-                    document.body.style.background = 'url(002.jpg)';
-                    break;
-                case 'b':
-                    document.body.style.background = 'url(003.jpg)';
-                    break;
-                case 'c':
-                    document.body.style.background = 'url(004.jpg)';
-                    break;
-                case 'd':
-                    document.body.style.background = 'url(005.jpg)';
-                    break;
-            }
-        }
-    </script>
+<div class="container">
+    <div class="row">
+        <div class="list-group">
+            <a href="" class="list-group-item"><i class="fa fa-qq"></i> 姓名</a>
+            <a href="" class="list-group-item"><i class="fa fa-qq"></i> 性别</a>
+            <a href="" class="list-group-item"><i class="fa fa-qq"></i> 年龄</a>
+            <a href="" class="list-group-item"><i class="fa fa-qq"></i> 邮箱</a>
+        </div>
+    </div>
+</div>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
